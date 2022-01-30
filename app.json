@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/my/index",
+        "pages/menu/index",
+        "pages/coursedetail/index",
+        "pages/searchlist/index",
+        "pages/mycourse/index",
+        "pages/myinfo/index",
+        "pages/editeInfo/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#7fabfd",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#5b5b5d",
+        "selectedColor": "#7fabfd",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/shouye1.png",
+                "selectedIconPath": "images/shouye.png",
+                "text": "首页"
+            },
+
+            {
+                "pagePath": "pages/menu/index",
+                "iconPath": "images/type1.png",
+                "selectedIconPath": "images/type.png",
+                "text": "菜单"
+            },
+
+            {
+                "pagePath": "pages/my/index",
+                "iconPath": "images/mine1.png",
+                "selectedIconPath": "images/mine.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}
