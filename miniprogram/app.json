@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/my/my",
+        "pages/myBody/myBody",
+        "pages/myInfo/myInfo",
+        "pages/menu/menu",
+        "pages/wenjuan/wenjuan"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#7fabfd",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#5b5b5d",
+        "selectedColor": "#7fabfd",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "iconPath": "images/home_no.png",
+                "selectedIconPath": "images/home_yes.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/menu/menu",
+                "iconPath": "images/menu_no.png",
+                "selectedIconPath": "images/menu_yes.png",
+                "text": "菜单"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "images/my_no.png",
+                "selectedIconPath": "images/my_yes.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

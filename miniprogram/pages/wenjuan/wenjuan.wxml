@@ -1,0 +1,59 @@
+<view class="container">
+    <form class="form-container" bindsubmit="submit" bindreset="cancel">
+
+        <view class="rectangle-container">
+                <picker bindchange="bindPickerChange" value="{{peoNum}}" range="{{number}}"  class="rectangle-title">
+                    就餐人数：{{number[peoNum]}}位
+                </picker>
+        </view>
+
+        <view class="rectangle-container">
+            <view class="rectangle-title">就餐者是否有高嘌呤人员</view>
+            <view class="line"></view>
+            <radio-group name="purine" class="rectangle-title-group">
+                <label><radio value="是" />是</label>
+                <label><radio value="否" />否</label>
+            </radio-group>
+        </view>
+
+        <view class="rectangle-container">
+            <view class="rectangle-title">是否喜欢喝火锅汤</view>
+            <view class="line"></view>
+            <radio-group name="soup" class="rectangle-title-group">
+                <label><radio value="是" />是</label>
+                <label><radio value="否" />否</label>
+            </radio-group>
+        </view>
+
+        <view class="rectangle-container">
+            <view class="rectangle-title">是否偏好下列食物</view>
+            <view class="line"></view>
+            <checkbox-group name="like" class="rectangle-title-group">
+                <label><checkbox value="肉类">肉类</checkbox></label>
+                <label><checkbox value="动物内脏类">动物内脏类</checkbox></label>
+                <label><checkbox value="海鲜类">海鲜类</checkbox></label>
+                <label><checkbox value="菌菇类">菌菇类</checkbox></label>
+            </checkbox-group>
+        </view>
+
+        <view class="rectangle-container">
+            <view class="rectangle-title">是否有忌口</view>
+            <view class="line"></view>
+            <radio-group name="hasTaboos" class="rectangle-title-group" bindchange="taboos">
+                <label><radio value="是" />是</label>
+                <label><radio value="否" />否</label>
+            </radio-group>
+            <view wx:if="{{hasTaboos}}">
+                <view class="line"></view>
+                <label><input class="rectangle-input" name="taboos" placeholder="请输入忌口食物" /></label>
+            </view>
+        </view>
+
+        <view class="rectangle-btn-container">
+            <view class="rectangle-btn">
+                <label><button form-type="reset" size="default" class="btn-cancel" hover-class="hover-btn">取消</button></label>
+                <label><button form-type="submit" size="default" class="btn-save" hover-class="hover-btn">保存</button></label>
+            </view>
+        </view>
+    </form> 
+</view>

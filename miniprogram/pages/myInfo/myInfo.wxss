@@ -1,0 +1,68 @@
+/* 样式框 */
+.menu-list {
+    width: 100%;
+}
+.menu-item {
+    display: flex;
+    height: 120rpx;
+    line-height: 120rpx;
+    background: #fff;
+    color: #7fabfd;
+    font-size: 32rpx;
+    margin: 20rpx 10rpx 0;
+    border-radius: 10rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+}
+.menu-item .menu-item-label {
+    margin-left: 50rpx;
+    color: #999;}
+
+.menu-item-title-container {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item-title {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin-right: 10rpx;
+}
+.next-icon {
+    display: flex;
+    width:45rpx;
+    height:45rpx;
+    margin-right: 20rpx;
+}
+.address{
+    width: 100%;
+    /* border:1px solid red; */
+}
+
+/* 性别选择 */
+.gender-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.gender-content {
+    display: flex;
+    width:60%;
+    height:150rpx;
+    margin: 50% auto;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.radio-group {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}

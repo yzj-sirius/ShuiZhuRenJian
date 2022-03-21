@@ -1,0 +1,35 @@
+<view wx:if="{{userInfo == null}}" class="container">
+    <view class="noLogin">
+        <view class="userinfo">
+            <image class="face" src="../../images/random user.png" />
+            <view class="nickname">请点击登录按钮</view>
+        </view>
+        <button bindtap="login" type="primary">登录</button>
+    </view>
+</view>
+<view wx:else="{{userInfo != null}}" class="container">
+    <view class="userinfo">
+        <view class="user-avatar-wrapper">
+            <image class="user-avatar" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="user-nickname">{{userInfo.nickName}}, 您好</view>
+    </view>
+    <view class="menu-list">
+        <navigator url="../myBody/myBody">
+            <view class="my-course menu-item">
+                <view class="menu-item-title">
+                    我的身体状况
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png" />
+            </view>
+        </navigator>
+        <navigator url="../myInfo/myInfo">
+            <view class="my-setting menu-item">
+                <view class="menu-item-title">
+                    我的资料
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png" />
+            </view>
+        </navigator>
+    </view>
+</view>

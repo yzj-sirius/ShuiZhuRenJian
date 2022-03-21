@@ -1,0 +1,77 @@
+<view class="container">
+    <view class="menu-list">
+
+        <view class="menu-item">
+            <view class="menu-item-label">
+                昵称
+            </view>
+            <view class="menu-item-title-container">
+                <view  class="menu-item-title">
+                    {{userInfo.nickName}}
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png"/>
+            </view>
+        </view>
+
+        <view class="menu-item">
+            <view class="menu-item-label">
+                性别
+            </view>
+            <view bindtap="showGenderDialog" class="menu-item-title-container">
+                <view  class="menu-item-title">
+                    {{userInfo.sex}}
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png"/>
+            </view>
+        </view>
+
+        <view class="menu-item">
+            <view class="menu-item-label">
+                邮箱
+            </view>
+            <navigator url="../editeInfo/index?key=email&value={{user.email}}&label=邮箱" class="menu-item-title-container">
+                <view class="menu-item-title">
+                    {{userInfo.email}}
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png"/>
+            </navigator>
+        </view>
+
+        <view class="menu-item">
+            <view class="menu-item-label">
+                手机
+            </view>
+            <navigator url="../editeInfo/index?key=phone&value={{user.phone}}&label=手机" class="menu-item-title-container">
+                <view class="menu-item-title">
+                    {{userInfo.phone}}
+                </view>
+                <image class="next-icon" src="../../images/rightArrow.png"/>
+            </navigator>
+        </view>
+
+        <view class="menu-item">
+            <view class="menu-item-label">
+                省市区
+            </view>
+            <view class="menu-item-title-container">
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" class="menu-item-title">
+                    <view class="address">{{userInfo.province}} {{userInfo.city}} {{userInfo.area}}</view>
+                </picker>
+                <image class="next-icon" src="../../images/rightArrow.png"/>
+            </view>
+        </view>
+    </view>
+
+    <view wx:if="{{genderDialogStatus}}">
+        <view class="gender-dialog">
+            <view class="gender-content">
+                <radio-group class="radio-group" bindchange="genderRadioChange">
+                    <label class="radio" wx:key="genders" wx:for="{{genders}}">
+                        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+    </view>
+</view>
+

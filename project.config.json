@@ -1,16 +1,14 @@
 {
-    "description": "项目配置文件",
-    "packOptions": {
-        "ignore": []
-    },
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
     "setting": {
-        "urlCheck": true,
-        "es6": false,
+        "urlCheck": false,
+        "es6": true,
         "enhance": true,
         "postcss": true,
         "preloadBackgroundData": false,
         "minified": true,
-        "newFeature": false,
+        "newFeature": true,
         "coverView": true,
         "nodeModules": false,
         "autoAudits": false,
@@ -41,19 +39,10 @@
         "useCompilerPlugins": false,
         "ignoreUploadUnusedFiles": true
     },
-    "compileType": "miniprogram",
-    "libVersion": "2.17.0",
     "appid": "wxfc6ea7dcc3825295",
     "projectname": "ShuiZhuRenJian",
-    "debugOptions": {
-        "hidedInDevtools": []
-    },
-    "scripts": {},
-    "staticServerOptions": {
-        "baseURL": "",
-        "servePath": ""
-    },
-    "isGameTourist": false,
+    "libVersion": "2.22.1",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
     "condition": {
         "search": {
             "list": []
@@ -61,17 +50,20 @@
         "conversation": {
             "list": []
         },
-        "game": {
-            "list": []
-        },
         "plugin": {
             "list": []
         },
-        "gamePlugin": {
+        "game": {
             "list": []
         },
         "miniprogram": {
-            "list": []
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide"
+                }
+            ]
         }
     }
 }

@@ -1,0 +1,124 @@
+/* 轮播图 */
+.swiper-container {
+    height: 400rpx;
+    width: 100%;
+}
+.item {
+    height: 100%;
+    line-height: 400rpx;
+    text-align: center;
+}
+swiper-item:nth-child(1) .item {
+    background-color: lightsalmon;
+}
+swiper-item:nth-child(2) .item {
+    background-color: lightseagreen;
+}
+swiper-item:nth-child(3) .item {
+    background-color: lightskyblue;
+}
+  
+ /* 标题样式 */
+ .rectangle-list {
+    width: 100%;
+    height: 80rpx;
+}
+.rectangle-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10rpx 0;
+}
+.rectangle-title-wrapper,
+.rectangle-more-wrapper {
+    display:flex;
+    align-items: center;
+}
+  
+.rectangle-title {
+    color: #676767;
+    font-size: 32rpx;
+    margin-left: 10rpx;
+}
+  
+.rectangle-title-image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-left: 10rpx;
+}
+  
+.rectangle-more {
+    padding: 10rpx 25rpx;
+    margin-right: 10rpx;
+    font-size: 28rpx;
+    color: #fff;
+    background-color: #7fabfd;
+    border-radius: 8rpx;
+}
+
+
+/* 推荐菜品滑动 */
+.seperator-line {
+    width: 100%;
+    height: 150px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+/* 左半边 */
+.scroll-container-left {
+    height: 150px;
+    width: 50%;
+}
+.scroll-container-left view {
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 0 10rpx 0 20rpx;
+}
+.scroll-container-left view:nth-child(1) {
+    background-color: lightskyblue;
+}
+.scroll-container-left view:nth-child(2) {
+    background-color: lightsalmon;
+}
+/* 右半边 */
+.scroll-container-right {
+    height: 150px;
+    width: 50%;
+}
+.scroll-container-right view {
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 0 20rpx 0 10rpx;
+}
+.scroll-container-right view:nth-child(1) {
+    background-color: lightcyan;
+}
+.scroll-container-right view:nth-child(2) {
+    background-color: lightslategray;
+}
+
+  
+/* 身体状况 */
+.health-container{
+    width: 100%;
+    height: 600px;
+}
+.no-health {
+    color: #7fabfd;
+    text-align: center;
+    font-size: 35rpx;
+    font-weight: 700;
+}
+.add-container {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-icon{
+    height: 100rpx;
+    width: 100rpx;
+} 

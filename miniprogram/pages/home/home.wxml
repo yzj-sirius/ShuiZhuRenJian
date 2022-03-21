@@ -1,0 +1,55 @@
+<view class="container">
+    <!-- 轮播图 -->
+    <swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="lightblue" autoplay interval="2000" circular="ture">
+        <swiper-item>
+            <view class="item">第一张图片</view>
+        </swiper-item>
+        <swiper-item>
+            <view class="item">第二张图片</view>
+        </swiper-item>
+        <swiper-item>
+            <view class="item">第三张图片</view>
+        </swiper-item>
+    </swiper>
+   <!-- 样式框 -->
+    <view class="rectangle-list">
+        <view class="rectangle-header">
+            <view class="rectangle-title-wrapper">
+                <image class="rectangle-title-image" src="../../images/recommend.png" />
+                <view class="rectangle-title">推荐菜品</view>
+            </view>
+            <view class="rectangle-more-wrapper">
+                <view class="rectangle-more" bindtap="gotoMenu">更多</view>
+            </view>
+        </view>
+    </view>
+    <!-- 推荐菜品滚动 -->
+    <view class="seperator-line" >
+        <scroll-view class="scroll-container-left" scroll-y>
+            <view>第一张图片</view>
+            <view>第二张图片</view>
+        </scroll-view>
+        <scroll-view class="scroll-container-right" scroll-y>
+            <view>第一张图片</view>
+            <view>第二张图片</view>
+        </scroll-view>
+    </view>
+
+    <view class="rectangle-list">
+        <view class="rectangle-header">
+            <view class="rectangle-title-wrapper">
+                <image class="rectangle-title-image" src="../../images/health.png" />
+                <view class="rectangle-title">身体状况</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="health-container">
+        <view wx:if="{{myBody}}" class="no-health">您还没有添加身体状况 ☺</view>
+        <view wx:if="{{myBody}}" class="add-container">
+            <navigator url="../wenjuan/wenjuan">
+                <image class="add-icon" src="../../images/Add.png" />
+            </navigator>
+        </view>
+    </view>
+</view>
