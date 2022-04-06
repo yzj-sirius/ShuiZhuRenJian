@@ -3,7 +3,6 @@
     <view class="nav-tab-wrp">
       <navigator url="javascript:(0)" class="nav-tab-item active" hover-class="navigator-hover">点餐</navigator>
       <navigator url="navigate?title=navigate" class="nav-tab-item" hover-class="navigator-hover">评价</navigator>
-      <navigator url="navigate?title=navigate" class="nav-tab-item" hover-class="navigator-hover">商家</navigator>
     </view>
     <!-- 选菜 -->
     <view class="menu-wrp">
@@ -13,7 +12,7 @@
             <block wx:for="{{menus}}"  wx:key="id" wx:for-item="menu">
                 <view class="menu-item" data-id="{{menu.id}}" data-tag="{{menu.tag}}" bindtap="selectMenu">
                     <view class="menu-item-wrp">
-                        <view class="{{selectedMenuId == menu.id ? 'bc_red' : 'bc_gray'}} m-item-icon">
+                        <view class="{{selectedMenuId == menu.id ? 'bc_blue' : 'bc_gray'}} m-item-icon">
                             <image class="image" src="resources/pic/ding-ico1.png" />
                         </view>
                         <view>
@@ -33,11 +32,11 @@
                         <view class="dish-item">
                             <view class="dish-item-wrp">
                                 <view class="dish-item-pic">
-                                    <image class="image" src="resources/pic/{{dish.pic}}" />
+                                    <image class="image" src="resources/pic/dish-2.jpg" />
                                 </view>
                                 <view class="dish-item-info">
                                     <view>
-                                        <text class="dish-item-name">{{dish.name}}</text>
+                                        <text class="dish-item-name">菜品</text>
                                     </view>
                                     <view>
                                         <text class="dish-item-sales">月销量{{dish.sales}}</text>

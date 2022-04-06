@@ -1,6 +1,7 @@
 .image{
   width: 100%;
-  height: 100%
+  height: 100%;
+  border-radius: 20rpx;
 }
 
 /*tab导航*/
@@ -81,19 +82,18 @@
     padding-left: 110rpx;
 }
 .cart-tab-item-btn{
-    box-sizing: border-box;
     display: block;
     line-height: 100rpx;
     font-size: 30rpx;
     background: #7fabfd;
     color: #fff;
+    border-radius: 20rpx;
     text-align: center;
 }
 .cart-tab-item{
   position: fixed; 
-  width: 120px;
-  margin-left: 75%;
-  box-sizing: border-box;
+  width: 200rpx;
+  margin-left: 70%;
 }
 
 /* 菜单wrap */
@@ -126,6 +126,12 @@
   height: 100rpx;
   margin: 0 auto;
   border-radius: 50%
+}
+.bc_blue{
+  background-color: #7fabfd;
+}
+.bc_gray{
+  background-color: gray;
 }
 .m-item-title{
   font-size: 30rpx;

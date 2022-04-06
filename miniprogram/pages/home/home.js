@@ -1,9 +1,15 @@
 const app = getApp()
-
 Page({
     data: {
         userInfo: {},
         myBody: true,
+        home1:'../../images/home_image1.jpg',
+        home2:'../../images/home_image2.jpg',
+        home3:'../../images/home_image3.jpg',
+        menu1:'../../images/menu1.jpg',
+        menu2:'../../images/menu2.jpg',
+        menu3:'../../images/menu3.jpg',
+        menu4:'../../images/menu4.jpg',
     },
     onLoad() {
         wx.getUserProfile({
