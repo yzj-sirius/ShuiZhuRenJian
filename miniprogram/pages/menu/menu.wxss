@@ -39,6 +39,7 @@
   position: fixed;
   bottom: 0rpx;
   background: rgba(255, 255, 255, 0.9);
+  border-top: 4rpx solid #7fabfd;
   display: flex;
   flex-direction:row;
   width: 100%;
@@ -82,7 +83,9 @@
     padding-left: 110rpx;
 }
 .cart-tab-item-btn{
-    display: block;
+    /* display: block; */
+    position: absolute; 
+    width: 200rpx;
     line-height: 100rpx;
     font-size: 30rpx;
     background: #7fabfd;
@@ -91,7 +94,7 @@
     text-align: center;
 }
 .cart-tab-item{
-  position: fixed; 
+  position: absolute; 
   width: 200rpx;
   margin-left: 70%;
 }
