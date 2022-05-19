@@ -3,7 +3,7 @@
 
         <view class="rectangle-container">
                 <picker bindchange="bindPickerChange" value="{{peoNum}}" range="{{number}}"  class="rectangle-title">
-                    就餐人数：{{number[peoNum]}}位
+                    就餐人数：{{number[peoNum-1]}}位
                 </picker>
         </view>
 

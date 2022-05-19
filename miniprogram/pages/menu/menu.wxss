@@ -202,6 +202,13 @@
   color: #454545;
   font-size: 26rpx;
 }
+.no-health {
+    color: #7fabfd;
+    text-align: center;
+    font-size: 35rpx;
+    font-weight: 700;
+    border: 1rpx solid black;
+}
 .dish-item-sales{
   color: #ccc;
   font-size:20rpx;

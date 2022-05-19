@@ -5,8 +5,8 @@ Page({
 
     data: {
         bodyInfo: {},
-        number: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        peoNum: 1,
+        number: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        peoNum: 0,
         hasTaboos: false,
     },
 
@@ -58,7 +58,7 @@ Page({
     },
     // 保存form内数据
     submit: function (e) {
-        console.log(e)
+        console.log('save',e)
 
     },
     cancel: function (e) {
